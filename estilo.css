@@ -1,0 +1,87 @@
+* { 
+    margin: 0;
+    padding: 0;  
+    /* Definindo a margem geral em 0. */
+  }
+
+  header {
+    width: 100%;  /* Define largura 100%. */
+    height: 100vh; /* Define altura 100% da visão. */
+    overflow: hidden; /* Corta o conteudo que ultrapassa o scroll. */
+    position: relative; /* Começa a contar a partir do canto superior esquerdo. */   
+  }
+
+  .img-wrapper {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.8); /* Define a cor do plano de fundo */
+  }
+ 
+  .img-wrapper img {
+    width: 100%;
+    height: 100vh;
+    opacity: 0.5; /* Define opacidade da imagem. */
+  }
+
+  .banner {
+    position: absolute; /* Define o posicionamento a partir das diretrizes abaixo. */
+    top: 30%; /* 30% de distancia da parte de cima. */
+    left: 15%; /* 15% de distancia da esquerda. */
+  }
+
+  .banner h1 {
+    color: #ffffff; /* Define cor do texto. */
+    font-size: 3.5rem; /* Define tamanho do texto. */
+    font-weight: 200; /* Define intensidade da fonte. */
+    text-shadow: 0.3rem 0.4rem 2px rgba(255, 255, 255, 0.212); /* Define sombras do texto. */
+    line-height: 3.5rem; /* Define o espaçamento entre as linhas do texto. */
+    margin-bottom: 2rem; /* Define margem inferior. */  
+  }
+
+  .banner h2{
+    color: #ffffff;
+    font-size: 3.5rem;
+    font-weight: 180;
+    text-shadow: 0.3rem 0.4rem 2px rgba(255, 255, 255, 0.212);
+    line-height: 3.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .banner p{
+    color: #ffffff;
+    font-size: 3.5rem;
+    font-weight: 200;
+    text-shadow: 0.3rem 0.4rem 2px rgba(255, 255, 255, 0.212);
+    line-height: 3.5rem;
+    margin-bottom: 2rem;      
+  }
+
+
+  .banner button {
+    color: #fff; /* Define cor do texto. */
+    text-transform: uppercase; /* Coloca o texto em maiúsculo. */
+    letter-spacing: 0.1rem; /* Define espaço entre as letras. */
+    background-color: rgba(51, 2, 114, 0.884); /* Define cor de fundo do botão. */
+    padding: 1rem 3rem; /* Define distancia das bordas. */
+    border: none; /* Tira as bordas do botão. */
+    cursor: pointer; /* Define o cursor do mouse. */
+    margin-bottom: 2rem; /* Define margem inferior. */
+    margin-left: 4rem; /* Define margem esquerda. */
+  }
+
+  input[type="text"] {
+    height: 2.5rem; /* Define altura da campo. */
+    width: 18rem; /* Define largura do campo. */
+  }
+
+  .banner label{
+    color: #ffffff;
+    font-size: 3.5rem;
+    font-weight: 200;
+    text-shadow: 0.3rem 0.4rem 2px rgba(255, 255, 255, 0.212);
+    line-height: 3.5rem;
+    margin-bottom: 2rem;
+  }
+
+  

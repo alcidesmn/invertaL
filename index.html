@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="imagens/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="imagens/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>InverteL</title>
+</head>
+<body>    
+    <div class="conteudo">
+        <head>
+            <div class="img-wrapper">
+                <img src="imagens/lash.jpg">
+            </div>
+            <div class="banner">
+                <h1>Olá, tudo bem?</h1>
+                <hr><br><!--espaçamento e pula uma linha-->
+                <h2>Por gentileza, digite um nome.</h2>  
+                <input type="text" placeholder="" id="nome" size="30" style="font-size: 150%" ><!--aumentando o espaço de digitação e o tamanho da fonte.-->   
+                <button onclick="verificaL()">Digitou? Clique aqui!</button><!-- botão que chama a função.-->
+                <br>  
+                <label id="resultado"></label><!--label para mostrar o resultado.-->
+                <script>
+                //função verifica o que foi digitado, se nome tiver L então invertida recebe nome ao contrario.
+                //se não coloca o nome todo em minúsculo. 
+                    function verificaL(){
+                        var nome = document.querySelector('#nome').value;
+                        var invertida;
+
+                        if(nome.indexOf(('L')||('l')) !== -1) {    
+                         
+                            invertida = nome.split("").reverse().join("");
+                            document.querySelector("#resultado").innerHTML = "Contém L, inverter nome: " + invertida;
+                                        
+                        }
+                        else{
+                        
+                            nome = (nome.toLowerCase());
+                            document.querySelector("#resultado").innerHTML = "Não contém L, nome em minúsculo: " + nome;
+                        }
+                    }                                          
+                </script>
+                <br>                             
+            </div>
+        </head>
+    </div>
+</body>
+</html>
